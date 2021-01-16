@@ -14,10 +14,14 @@ npm i
 npm start
 
 queryLoadService will be running on port 4000
+
+
 ----------------------------------------------------------------
 in postman:
 
+
 url(POST) : localhost:3000/auth/register
+
 body: {
 	"username": "username",
 	"password": "password",
@@ -28,7 +32,9 @@ body: {
 	"rate": 2.5
 }
 
+
 url(POST) : localhost:3000/auth/login
+
 body: {
 	"username": "username",
 	"password": "password"
@@ -36,10 +42,13 @@ body: {
 
 url(GET) : localhost:4000/all
 
+
 url(POST): localhost:4000/nearme
+
 head: {
   "token": token that given from login API
 }
+
 
 ------------------------------------------------------------------
 queryLoadService will be get user authentication from auth service. Then sending all/near user peoples who was registered in another service.
